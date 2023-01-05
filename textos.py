@@ -63,7 +63,7 @@ cadastrarCL = '''
     
     Sejam todos, todas e todes muito bem-vindos(as)(es) a maravilhosa biblioteca digital LEsquivel05.
     
-    Para prosseguir vamos precisar de seu número de documento, sexo, nome e idade. 
+    Para prosseguir vamos precisar de seu número de CPF, sexo, nome e idade. 
     
     Se tiver esses dados digite S para continuar.
 '''

@@ -1,5 +1,6 @@
 from textos import *
 import funcoes as fn
+import logar as lg
 import os
 
 print(inicio)
@@ -15,9 +16,15 @@ if fn.leituramenu(0, 1, iniciar) == 0:
         if fn.leituramenu(0, 1, iniciar) == 0:
             os.system('cls')
             print(logarCO)
+            login = str(input())
+            senha = str(input())
+            lg.tentarentrarCO(login, senha)
         else:
             os.system('cls')
             print(logarCL)
+            login = str(input())
+            senha = str(input())
+            lg.tentarentrarCL(login, senha)
     else:
         os.system('cls')
         print(cadastrar)

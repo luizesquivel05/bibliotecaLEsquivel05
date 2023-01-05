@@ -33,7 +33,7 @@ for i in dadoCL:
 def tentarentrarCL(tentativalogin, tentativasenha):
     if tentativalogin in listaLOGINCL and tentativasenha in listaSENHACL:
         if listaLOGINCL.index(tentativalogin) == listaSENHACL.index(tentativasenha):
-            print('Favor verificar login e senha.')
+            print('Logado como cliente')
         else:
             print('Favor verificar login e senha.')
     else:
@@ -42,12 +42,8 @@ def tentarentrarCL(tentativalogin, tentativasenha):
 def tentarentrarCO(tentativalogin, tentativasenha):
     if tentativalogin in listaLOGINCO and tentativasenha in listaSENHACO:
         if listaLOGINCO.index(tentativalogin) == listaSENHACO.index(tentativasenha):
-            print('Favor verificar login e senha.')
+            print('Logado como contribuinte')
         else:
             print('Favor verificar login e senha.')
     else:
         print('Favor verificar login e senha.')
-        
-# tentativalogin = str(input())
-# tentativasenha = str(input())
-# tentarentrarCL(tentativalogin, tentativasenha)

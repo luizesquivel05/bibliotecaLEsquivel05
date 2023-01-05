@@ -1,36 +1,33 @@
 from textos import *
+import funcoes as fn
 import os
 
-while True:
-    print(inicio)
-    leitura = int(input())
-    if leitura == 0:
+print(inicio)
+iniciar = int(input())
+if fn.leituramenu(0, 1, iniciar) == 0:
+    os.system('cls')
+    print(verLOGIN)
+    iniciar = int(input())
+    if fn.leituramenu(0, 1, iniciar) == 0:
         os.system('cls')
-        print(verLOGIN)
-        leitura = int(input())
-        if leitura == 0:
+        print(logar)
+        iniciar = int(input())
+        if fn.leituramenu(0, 1, iniciar) == 0:
             os.system('cls')
-            print(logar)
-            leitura = int(input())
-            if leitura == 0:
-                os.system('cls')
-                print(logarCO)
-            elif leitura == 1:
-                os.system('cls')
-                print(logarCL)
-        elif leitura == 1:
+            print(logarCO)
+        else:
             os.system('cls')
-            print(cadastrar)
-            leitura = int(input())
-            if leitura == 0:
-                os.system('cls')
-                print(cadastrarCO)
-            elif leitura == 1:
-                os.system('cls')
-                print(cadastrarCL)
-    elif leitura == 1:
-        os.system('cls')
-        print(sobre)
+            print(logarCL)
     else:
         os.system('cls')
-        break
+        print(cadastrar)
+        iniciar = int(input())
+        if fn.leituramenu(0, 1, iniciar) == 0:
+            os.system('cls')
+            print(cadastrarCO)
+        else:
+            os.system('cls')
+            print(cadastrarCL)
+else:
+    os.system('cls')
+    print(sobre)

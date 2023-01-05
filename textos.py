@@ -5,7 +5,7 @@ inicio = '''
     
     Sejam todos, todas e todes muito bem-vindos(as)(es) a maravilhosa biblioteca digital LEsquivel05.
     
-    Para começar iremos realizar a parte básica de login e cadastro.
+    Para começar iremos realizar a parte inicial para lhe colocar no público certo.
     
     Diga 0 se deseja se logar (ou cadastrar) ou 1 se deseja acessar parte pública.
 '''

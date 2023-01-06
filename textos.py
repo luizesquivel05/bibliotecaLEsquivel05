@@ -68,6 +68,16 @@ cadastrarCL = '''
     Se tiver esses dados digite S para continuar.
 '''
 
+cadastroCONCLUIDO = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Sejam todos, todas e todes muito bem-vindos(as)(es) a maravilhosa biblioteca digital LEsquivel05.
+    
+    Cadastro concluído com sucesso.
+    
+    Deseja continuar com o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+'''
+
 sobre = '''
     Salve, salve caro amigo leitor, leitora ou leitore.
     

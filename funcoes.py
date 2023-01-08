@@ -3,6 +3,7 @@ from textos import *
 import funcoes as fn
 import logar as lg
 import cadastrar as cd
+import pandas as pd
 
 # Nesse arquivo iremos colocar as funções usadas na aplicação
 
@@ -117,10 +118,37 @@ def menu():
                     if int(input()) == 1: fn.menu()
     else:
         os.system('cls')
-        print(sobre)
+        print(aberta)
         print('''
             Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
         ''')
         verificacao = int(input())
-        if verificacao == 1:
+        if verificacao == 0:
+            os.system('cls')
             fn.menu()
+            print('''
+                Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+            ''')
+            verificacao = int(input())
+            if verificacao == 1: fn.menu()
+        elif verificacao == 1:
+            os.system('cls')
+            print(verACERVO)
+            print('\n\n', fn.acervo())
+            print('''
+                Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+            ''')
+            verificacao = int(input())
+            if verificacao == 1: fn.menu()
+            elif verificacao == 2:
+                os.system('cls')
+                print(sobre)
+                print('''
+                    Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+                ''')
+                verificacao = int(input())
+            elif verificacao == 1: fn.menu()
+            elif verificacao == 3: breakpoint
+            
+def acervo():
+    return pd.read_csv(r'administrativa\biblio.csv', sep=";")

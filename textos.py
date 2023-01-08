@@ -78,6 +78,30 @@ cadastroCONCLUIDO = '''
     Deseja continuar com o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
 '''
 
+aberta = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Essa parte iremos entender sobre o funcionamento da biblioteca digital LEsquivel05.
+    
+    O que deseja fazer, hoje?
+    
+    0 para VOLTAR PRO INÍCIO.
+    
+    1 para VER ACERVO DE LIVRO.
+    
+    2 para VER SOBRE.
+    
+    3 para ENCERRAR O PROGRAMA.
+'''
+
+verACERVO = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Essa parte iremos entender sobre o funcionamento da biblioteca digital LEsquivel05.
+    
+    Que bom deseja ver nosso acervo, vamos lá!
+'''
+
 sobre = '''
     Salve, salve caro amigo leitor, leitora ou leitore.
     

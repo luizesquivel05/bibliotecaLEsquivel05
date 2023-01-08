@@ -37,13 +37,12 @@ if fn.leituramenu(0, 1, iniciar) == 0:
             while lg.tentarentrarCL(login, senha) != "Sim":
                 login = str(input('Digite o login: '))
                 senha = str(input('Digite o senha: '))
-            else:
-                os.system('cls')
-                print('''
-                    Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
-                ''')
-                verificacao = int(input())
-                if verificacao == 1: fn.menu()
+            os.system('cls')
+            print('''
+                Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+            ''')
+            verificacao = int(input())
+            if verificacao == 1: fn.menu()
     else:
         os.system('cls')
         print(cadastrar)
@@ -88,10 +87,34 @@ if fn.leituramenu(0, 1, iniciar) == 0:
                 if int(input()) == 1: fn.menu()
 else:
     os.system('cls')
-    print(sobre)
+    print(aberta)
     print('''
         Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
     ''')
     verificacao = int(input())
-    if verificacao == 1:
+    if verificacao == 0:
+        os.system('cls')
         fn.menu()
+        print('''
+            Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+        ''')
+        verificacao = int(input())
+        if verificacao == 1: fn.menu()
+    elif verificacao == 1:
+        os.system('cls')
+        print(verACERVO)
+        print('\n\n', fn.acervo())
+        print('''
+            Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+        ''')
+        verificacao = int(input())
+        if verificacao == 1: fn.menu()
+        elif verificacao == 2:
+            os.system('cls')
+            print(sobre)
+            print('''
+                Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+            ''')
+            verificacao = int(input())
+        elif verificacao == 1: fn.menu()
+        elif verificacao == 3: breakpoint

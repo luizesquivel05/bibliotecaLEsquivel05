@@ -154,10 +154,10 @@ def acervo():
     dados = pd.read_csv(r'administrativa\biblio.csv', sep=";")
     return dados
 
-def new_func(acervo):
+def acervoADD():
     informacaoNovoLivro = list()
     dados = acervo()
-    acervo = pd.DataFrame(data=dados)
+    livros = pd.DataFrame(data=dados)
     nomeLivro = str(input("Digite o nome do livro: "))
     nomeAutor = str(input("Digite o nome do autor: "))
     anoPublicacao = str(input("Digite o ano de publicação: "))
@@ -170,4 +170,8 @@ def new_func(acervo):
     listaAux.append(edicaoAtual)
     listaAux.append(numeroPaginas)
     informacaoNovoLivro.append(listaAux)
+    novaLINHA = open(r'administrativa\biblio.csv', 'a+')
+    informacaoNovoLivro = str(informacaoNovoLivro)
+    novaLINHA.write("\n")
+    novaLINHA.write(informacaoNovoLivro)
     return informacaoNovoLivro

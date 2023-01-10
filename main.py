@@ -31,7 +31,10 @@ if fn.leituramenu(0, 1, iniciar) == 0:
                 elif verificacao == 2: print(sobre)
                 elif verificacao == 3: 
                     print(atividadesADM)
-                    if verificacao == 1: fn.menu()
+                    verificacao = int(input())
+                    if verificacao == 0: fn.menu()
+                    elif verificacao == 1: fn.acervoADD()
+                    elif verificacao == 3: fn.acervo()
         else:
             os.system('cls')
             print(logarCL)

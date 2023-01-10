@@ -102,6 +102,44 @@ verACERVO = '''
     Que bom deseja ver nosso acervo, vamos lá!
 '''
 
+loginCONTRIBUINTE = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Essa parte iremos entender sobre o funcionamento da biblioteca digital LEsquivel05.
+    
+    O que deseja fazer, hoje?
+    
+    0 para VOLTAR PRO INÍCIO.
+    
+    1 para VER ACERVO DE LIVRO.
+    
+    2 para VER SOBRE.
+    
+    3 para REALIZAR ATIVIDADES ADMINISTRATIVAS.
+    
+    4 para ENCERRAR O PROGRAMA.
+'''
+
+atividadesADM = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Essa parte iremos entender sobre o funcionamento da biblioteca digital LEsquivel05.
+    
+    Me conte o que deseja administrar:
+    
+    0 para VOLTAR PRO INÍCIO.
+    
+    1 para ATUALIZAR NOVAS OBRAS NO ACERVO.
+    
+    2 para REMOVER OBRAS DO ACERVO.
+    
+    3 para ATUALIZAR CORPO DE LOGIN CONTRIBUINTES.
+    
+    4 para ATUALIZAR CORPO DE LOGIN PARA CLIENTES.
+    
+    5 para ENCERRAR O PROGRAMA.
+'''
+
 sobre = '''
     Salve, salve caro amigo leitor, leitora ou leitore.
     

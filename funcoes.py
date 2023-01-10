@@ -151,4 +151,23 @@ def menu():
             elif verificacao == 3: breakpoint
             
 def acervo():
-    return pd.read_csv(r'administrativa\biblio.csv', sep=";")
+    dados = pd.read_csv(r'administrativa\biblio.csv', sep=";")
+    return dados
+
+def new_func(acervo):
+    informacaoNovoLivro = list()
+    dados = acervo()
+    acervo = pd.DataFrame(data=dados)
+    nomeLivro = str(input("Digite o nome do livro: "))
+    nomeAutor = str(input("Digite o nome do autor: "))
+    anoPublicacao = str(input("Digite o ano de publicação: "))
+    edicaoAtual = str(input("Digite a edição atual: "))
+    numeroPaginas = str(input("Digite o número de páginas: "))
+    listaAux = list()
+    listaAux.append(nomeLivro)
+    listaAux.append(nomeAutor)
+    listaAux.append(anoPublicacao)
+    listaAux.append(edicaoAtual)
+    listaAux.append(numeroPaginas)
+    informacaoNovoLivro.append(listaAux)
+    return informacaoNovoLivro

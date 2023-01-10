@@ -24,11 +24,14 @@ if fn.leituramenu(0, 1, iniciar) == 0:
                 senha = str(input('Digite o senha: '))
             else:
                 os.system('cls')
-                print('''
-                    Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
-                ''')
+                print(loginCONTRIBUINTE)
                 verificacao = int(input())
-                if verificacao == 1: fn.menu()
+                if verificacao == 0: fn.menu()
+                elif verificacao == 1: fn.acervo()
+                elif verificacao == 2: print(sobre)
+                elif verificacao == 3: 
+                    print(atividadesADM)
+                    if verificacao == 1: fn.menu()
         else:
             os.system('cls')
             print(logarCL)

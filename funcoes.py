@@ -156,8 +156,6 @@ def acervo():
 
 def acervoADD():
     informacaoNovoLivro = list()
-    dados = acervo()
-    livros = pd.DataFrame(data=dados)
     nomeLivro = str(input("Digite o nome do livro: "))
     nomeAutor = str(input("Digite o nome do autor: "))
     anoPublicacao = str(input("Digite o ano de publicação: "))

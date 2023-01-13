@@ -142,6 +142,26 @@ atividadesADM = '''
     6 para ENCERRAR O PROGRAMA.
 '''
 
+loginCLIENTE = '''
+    Salve, salve caro amigo leitor, leitora ou leitore.
+    
+    Essa parte iremos entender sobre o funcionamento da biblioteca digital LEsquivel05.
+    
+    O que deseja fazer, hoje?
+    
+    0 para VOLTAR PRO INÍCIO.
+    
+    1 para VER ACERVO DE LIVRO.
+    
+    2 para VER SOBRE.
+    
+    3 para REALIZAR ATUALIZAÇÃO NO SEU CADASTRO.
+    
+    4 para RETIRAR SUA LIGAÇÃO COM A BIBLIOTECA DIGITAL LESQUIVEL05
+    
+    5 para ENCERRAR O PROGRAMA.
+'''
+
 sobre = '''
     Salve, salve caro amigo leitor, leitora ou leitore.
     

@@ -54,11 +54,17 @@ def menu():
                     senha = str(input('Digite o senha: '))
                 else:
                     os.system('cls')
-                    print('''
-                        Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
-                    ''')
+                    print(loginCONTRIBUINTE)
                     verificacao = int(input())
-                    if verificacao == 1: fn.menu()
+                    if verificacao == 0: fn.menu()
+                    elif verificacao == 1: fn.acervo()
+                    elif verificacao == 2: print(sobre)
+                    elif verificacao == 3: 
+                        print(atividadesADM)
+                        verificacao = int(input())
+                        if verificacao == 0: fn.menu()
+                        elif verificacao == 1: fn.acervoADD()
+                        elif verificacao == 3: fn.acervo()
             else:
                 os.system('cls')
                 print(logarCL)
@@ -67,13 +73,12 @@ def menu():
                 while lg.tentarentrarCL(login, senha) != "Sim":
                     login = str(input('Digite o login: '))
                     senha = str(input('Digite o senha: '))
-                else:
-                    os.system('cls')
-                    print('''
-                        Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
-                    ''')
-                    verificacao = int(input())
-                    if verificacao == 1: fn.menu()
+                os.system('cls')
+                print('''
+                    Deseja encerrar o programa? 0 para ENCERRAR O PROGRAMA ou 1 para VOLTAR AO INÍCIO.
+                ''')
+                verificacao = int(input())
+                if verificacao == 1: fn.menu()
         else:
             os.system('cls')
             print(cadastrar)
@@ -173,3 +178,5 @@ def acervoADD():
     novaLINHA.write("\n")
     novaLINHA.write(informacaoNovoLivro)
     return informacaoNovoLivro
+
+#  git commit -m "atualizar funcao menu e criar textos da parte aberta"

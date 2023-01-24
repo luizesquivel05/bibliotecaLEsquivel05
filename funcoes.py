@@ -178,5 +178,3 @@ def acervoADD():
     novaLINHA.write("\n")
     novaLINHA.write(informacaoNovoLivro)
     return informacaoNovoLivro
-
-#  git commit -m "atualizar funcao menu e criar textos da parte aberta"

@@ -1,6 +1,6 @@
 # SISTEMA BIBLIOTECA.
 
-<img src="qrcode.png" alt="exemplo imagem">
+<img src="biblio.png" alt="exemplo imagem">
 
 > Em nosso programa iremos usar o sistema de digitalização de uma biblioteca.
 

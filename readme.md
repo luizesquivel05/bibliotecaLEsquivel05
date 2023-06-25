@@ -66,7 +66,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#">
         <img src="luiz.png" width="100px;" alt="Foto de Luiz Esquivel"/><br>
         <sub>
-          <b>Luiz Esquivel - 20 anos, médio completo, analista de dados Jr.</b>
+          <b>Luiz Esquivel - 20 anos, médio completo, analista de Desenvolvimento de Sistemas.</b>
         </sub>
       </a>
     </td>
@@ -142,7 +142,7 @@ We would like to thank the following person who contributed to this project:
       <a href="#">
         <img src="luiz.png" width="100px;" alt="Photo of Luiz Esquivel"/><br>
         <sub>
-          <b>Luiz Esquivel - 20 years old, completed high school, Jr. Data Analyst.</b>
+          <b>Luiz Esquivel - 20 years old, completed high school, System Developer Analyst.</b>
         </sub>
       </a>
     </td>
